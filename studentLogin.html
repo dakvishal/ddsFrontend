@@ -2,9 +2,9 @@
 <html>
 
 <head>
-    <title> HCC NITK | Student Registration </title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Custom CSS -->
+    <title> HCC NITK | Student Login </title>
+
+
     <!-- Web Fonts -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
@@ -127,111 +127,53 @@
         <!-- End Navbar -->
 
 
-        <!-- Image title -->
+        <!-- title -->
 
         <div style="text-align: center; margin-top: 50px;">
-            <h2>STUDENT REGISTRATION</h2>
+            <h2>STUDENT LOGIN</h2>
         </div>
-
-        <!-- End title  -->
+        <!--  title  -->
 
 
         <!--=== Content Part ===-->
         <div class="container content">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
-                    <form onsubmit="showMsg(0);return false;" method="post" class="reg-page">
+                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                    <form class="reg-page">
                         <div class="reg-header">
-                            <h2>Register a new account</h2>
-                            <p>Already Signed Up? Click <a href="studentLogin.html" class="color-green">Sign In</a> to
-                                login
-                                your account.</p>
+                            <h2>Login to your account</h2>
+                        </div>
+
+                        <div class="input-group " style="margin-bottom: 20px;">
+                            <span class="input-group-addon"><i class="fab fa-user"></i></span>
+                            <input type="Email" name="userid" placeholder="Email Address" class="form-control"
+                                required="">
+                        </div>
+                        <div class="input-group " style="margin-bottom: 20px;">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" name="usrpsw" placeholder="Password" class="form-control"
+                                required="">
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-6">
-                                <label for="firstName">First Name <span class="color-red">*</span></label>
-                                <input type="text" id="firstName" name="firstName" style="margin-bottom: 20px;"
-                                    class="form-control" required>
+                            <div class="col-md-6 checkbox">
+                                <label><input type="checkbox"> Stay signed in</label>
                             </div>
-                            <div class="col-sm-6">
-                                <label for="lastname">Last Name <span class="color-red">*</span></label>
-                                <input type="text" id="lastName" name="lastName" style="margin-bottom: 20px;"
-                                    class="form-control" required>
+                            <div class="col-md-6">
+                                <button class="btn-u pull-right" type="submit" onclick="userlogin(form)">Login</button>
                             </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="email">Email Address <span class="color-red">*</span></label>
-                            <input type="text" id="email" name="email" style="margin-bottom: 20px;" class="form-control"
-                                required>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="gender">Gender:</label>
-                        <select id="gender" name="gender" style="margin-bottom: 20px;">
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="phone">Phone No. <span class="color-red">*</span></label>
-                            <input type="text" id="phone" name="phone" style="margin-bottom: 20px;" class="form-control"
-                                required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label for="roll">Roll No. <span class="color-red">*</span></label>
-                            <input type="text" id="roll" name="roll" style="margin-bottom: 20px;" class="form-control"
-                                required>
-                            </div>
-                            <div class="col-sm-6">
-                                <label for="department">Department <span class="color-red">*</span></label>
-                            <input type="text" id="department" name="department" style="margin-bottom: 20px;"
-                                class="form-control" required>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <label>Password <span class="color-red">*</span></label>
-                                <input type="password" class="form-control " style="margin-bottom: 20px;" required="">
-                            </div>
-                            <div class="col-sm-6">
-                                <label>Confirm Password <span class="color-red">*</span></label>
-                                <input type="password" class="form-control " style="margin-bottom: 20px;" required="">
-                            </div>
-                        </div>
-                        <div class="alert alert-success successBox">
-                            <button type="button" class="close" onclick="showMsg(1);">×</button>
-                            <strong style="font-size: 16px;">Congratulations!</strong><span class="alert-link"> You Have
-                                Successfully Registered.</span>
                         </div>
 
                         <hr>
 
-                        <div class="row">
-                            <div class="col-lg-6 checkbox">
-                                <label>
-                                    <input type="checkbox" required="">
-                                    I read <a href="#" class="color-green">Terms and Conditions</a>
-                                </label>
-                            </div>
-                            <div class="col-lg-6 text-right">
-                                <button class="btn-u" type="submit">Register</button>
-                            </div>
-                        </div>
+                        <h4>Forget your Password ?</h4>
+                        <p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
                     </form>
                 </div>
-            </div>
+            </div><!--/row-->
         </div><!--/container-->
         <!--=== End Content Part ===-->
 
-        
         <!--=== Footer ===-->
         <div class="footer-v1">
             <div class="footer">
@@ -308,18 +250,8 @@
         <!--=== End Footer ===-->
     </div><!--/wrapper-->
 
-    <!-- Java scripts -->
-    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js"></script>
-    <script type="text/javascript">
-        function showMsg(flag) {
-            if (flag == 0) {
-                $('.successBox').css('display', 'block');
-            } else {
-                $('.successBox').css('display', 'none');
-            }
-        }
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <!-- Login Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery/validation.js"></script>
 
 </body>
 
