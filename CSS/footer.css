@@ -102,23 +102,29 @@
     margin-right: 10px; /* Add spacing between social media icons */
   }
 
-  #logo-footer {
-    position: relative; /* Required for pseudo-element positioning */
+  .about{
+    margin-top: 10px;
+    padding: 4%;
   }
-  
-  #logo-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("/logo.jpg");
-    background-size: cover; /* Ensures image covers the element */
-    background-repeat: no-repeat; /* Prevents image tiling */
-    background-color: black; /* Sets black background for the pseudo-element */
-    background-clip: text; /* Only renders background where image content is */
+ 
+  ul.footer-socials list-inline {
+    /* CSS styles here */
+    margin: 0;
+    padding: 15px;
+    display: flex; /*Use flexbox to align items in a row*/
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
   }
+
+  .row{
+    margin: 0;
+    padding: 15px;
+    display: flex; /*Use flexbox to align items in a row*/
+    justify-content: space-evenly; /* Distribute items evenly */
+    align-items: center; /* Center items vertically */
+  }
+
+
   
   
   
