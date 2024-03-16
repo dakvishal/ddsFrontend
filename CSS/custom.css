@@ -541,7 +541,7 @@ background: #72c02c;
   color: #555;
   font-size: 24px;
   position: relative;
-  padding-bottom: 15px;
+  padding-bottom: 5px;
 }
 .headline-center p {
   /*color: #999;*/
@@ -549,10 +549,10 @@ background: #72c02c;
   /*padding: 0 150px;*/
 }
 .line {
-  width: 50px;
+  width: 60px;
   margin-top: -10px;
-  margin-left: 550px;
-  margin-bottom: 20px;
+  margin-left: 615px;
+  margin-bottom: 2px;
   border-bottom: 2px solid #72c02c;
 }
 .line2 {
