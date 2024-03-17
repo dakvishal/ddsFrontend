@@ -175,3 +175,11 @@ li {
     width: 170px;
     border-width: 1px;
 }
+
+div{
+    display: block;
+}
+
+section{
+    margin-top: 10px;
+}

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> HCC NITK | Appointment </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Web Fonts -->
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
+
+    <!-- CSS Global Compulsory -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- CSS Header and Footer -->
+    <link rel="stylesheet" href="./CSS/footer.css">
+
+    <!-- CSS Customization -->
+    <link rel="stylesheet" href="./CSS/custom.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="mega-menu" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="navbar-nav">
+
+                <!-- Home  -->
+                <li>
+                    <a href="index.html">
+                        HOME
+                    </a>
+
+                </li>
+                <!-- End Home-->
+
+                <!-- Blog -->
+                <!-- <li">
+                                    <a href="blog.html">
+                                        BLOGS
+                                    </a>
+                                </li> -->
+                <!-- End Blog -->
+
+                <!-- Contact Us -->
+                <!-- <li >
+                                    <a href="contact.html">
+                                        CONTACT US
+                                    </a>
+                                </li> -->
+                <!-- End Contact us -->
+
+                <!-- Stuedent Registration -->
+                <li>
+                    <a href="studentRegistration.html">
+                        STUDENT REGISTRATION
+                    </a>
+                </li>
+                <!-- End Student registration -->
+
+                <!-- Doctor Registration -->
+                <li>
+                    <a href="doctorRegistration.html">
+                        DOCTOR REGISTRATION
+                    </a>
+                </li>
+                <!-- End doctor registration -->
+
+                <!-- student login -->
+                <li>
+                    <a href="studentLogin.html">
+                        STUDENT LOGIN
+                    </a>
+                </li>
+                <!-- End student login -->
+
+                <!-- doctor login -->
+                <li>
+                    <a href="doctorLogin.html">
+                        DOCTOR LOGIN
+                    </a>
+                </li>
+                <!-- End doctor login -->
+
+                <!-- admin login -->
+                <li>
+                    <a href="adminLogin.html">
+                        ADMIN LOGIN
+                    </a>
+                </li>
+                <!-- End login -->
+
+                <!-- Appointment -->
+                <li>
+                    <a href="appointment.html">
+                        BOOK APPOINTMENT
+                    </a>
+
+                </li>
+                <!-- End Appointment -->
+
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- End Navbar -->
+
+    <!--=== Heading ===-->
+    <div class="container content">
+        <div class="row " style="margin-bottom: 30px;">
+            <div class="col-md-9 " style="margin-bottom: 30px;">
+                <div class="headline">
+                    <h2>Appointment Form</h2>
+                </div>
+
+                <!--=== APPOINTMENT FORM ===-->
+                <form onsubmit="showMsg(0);return false;" method="post" class="sky-form sky-changes-3">
+                    <fieldset>
+                        <div class="row">
+                            <section class="col col-6" style="margin-bottom: -15px;">
+                                <label class="label">Name</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-user"></i>
+                                    <input type="text" name="name" id="name" required="">
+                                </label>
+                            </section>
+                            <section class="col col-6" style="margin-bottom: -15px;">
+                                <label class="label">E-mail</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-envelope"></i>
+                                    <input type="email" name="email" id="emailAppointment" required="">
+                                </label>
+                            </section>
+                        </div>
+
+                        <section>
+                            <label class="label">Purpose Of Appointment</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-tag"></i>
+                                <input type="text" name="subject" required="">
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="label">DoctorId</label>
+                            <label class="input">
+                                <i class="fas fa-user-md"></i>
+                                <input type="text" name="subject" required="">
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="label">Mobile Number</label>
+                            <label class="input">
+                                <i class="icon-append fa fa-phone"></i>
+                                <input type="text" name="number" id="number" required="">
+                            </label>
+                        </section>
+
+                        <section>
+                            <label class="select">
+                                <select name="Department" required="">
+                                    <option value="" selected="" disabled="">Select Department</option>
+                                    <option>Cardiology</option>
+                                    <option>Dermatology and Cosmetology</option>
+                                    <option>General Surgery</option>
+                                    <option>Health Checkup Packages</option>
+                                    <option>Neurology</option>
+                                </select>
+                                <i></i>
+                            </label>
+                        </section>
+                        <div class="row">
+                            <section class="col col-6">
+                                <label class="date">Select Date</label>
+                                <label class="input">
+                                    <i class="icon-append fa fa-calendar"></i>
+                                    <input type="date" required="">
+                                </label>
+                            </section>
+                            <section class="col col-6">
+                                <label class="time">Select Time</label>
+                                <label class="select">
+                                    <select name="Time" required="">
+                                        <option value="" selected="" disabled="">Select Time</option>
+                                        <option>8 AM - 10 AM</option>
+                                        <option>10 AM - 12 PM</option>
+                                        <option>12 PM - 2 PM</option>
+                                        <option>2 PM - 4 PM</option>
+                                        <option>4 PM - 6 PM</option>
+                                        <!-- <option>6 PM - 8 PM</option> -->
+                                    </select>
+                                    <i></i>
+                                </label>
+                            </section>
+                        </div>
+                        <div class="alert alert-success successBox">
+                            <button type="button" class="close" onclick="showMsg(1);">×</button>
+                            <strong style="font-size: 16px;">Congratulations!</strong><span class="alert-link"> Your
+                                Appointment has been booked successfully.</span>
+                        </div>
+
+                    </fieldset>
+
+                    <footer>
+                        <button type="submit" class="btn-u">Send message</button>
+                    </footer>
+
+
+                </form>
+            </div><!--/col-md-9-->
+
+            <!-- side part of appointment -->
+            <div class="col-md-3" style="margin-top: 56px;">
+                <!-- Address -->
+                <div class="headline">
+                    <h2>Appointment Notes</h2>
+                </div>
+                <p> You Only Can Book Your Appointment Between <strong>8 AM to 8 PM.</strong> </p>
+                <p> In Other Times You Can Call Our Ambulance Which Is Available 24/7. </p>
+
+                <!-- Business Hours -->
+                <div class="headline" style="margin-top: 20px;">
+                    <h2>Business Hours</h2>
+                </div>
+                <ul class="list-unstyled " style="margin-bottom: 30px;">
+                    <li><strong>Monday-Saturday:</strong> 24/7 Available.</li>
+                    <li><strong>Sunday:</strong> 4 AM to 11 PM.</li>
+                </ul>
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+    </div><!--/container-->
+
+
+    <!--=== Footer ===-->
+    <div class="footer-v1">
+        <div class="footer">
+            <div class="row">
+                <!-- About -->
+                <div class="col-md-3 md-margin-bottom-40 about">
+                    <!-- <a href="index.html"><img id="logo-footer" class="footer-logo"
+                                    src="/logo.jpg" alt=""></a> -->
+                    <p>At HCC NITK, we are convinced that 'quality' and 'lowest cost' are not mutually
+                        exclusive when it comes to healthcare delivery.</p>
+                    <p>Our mission is to deliver high quality, affordable healthcare services to the whole NITK
+                        community.</p>
+                </div><!--/col-md-3-->
+                <!-- End About -->
+
+
+
+                <!-- Link List -->
+                <div class="col-md-3" style="margin-bottom: 40px;">
+                    <div class="headline">
+                        <h2>Useful Links</h2>
+                    </div>
+                    <div class="list-unstyled link-list">
+                        <li style="list-style-type: none;"><a href="about.html">About us</a><i class="fa fa-angle-right"
+                                style="margin-left: 5px;"></i></li>
+                        <li style="list-style-type: none;"><a href="Contact.html">Contact us</a><i
+                                class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
+                        <li style="list-style-type: none;"><a href="appointment.html">Book Appointment</a><i
+                                class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
+                    </div>
+                </div><!--/col-md-3-->
+                <!-- End Link List -->
+
+                <!-- Address -->
+                <div class="col-md-3 map-img" style="margin-bottom: 40px;">
+                    <div class="headline">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <address class="md-margin-bottom-40">
+                        Unity Hospital <br />
+                        Ahmedabad, IN <br />
+                        Phone: 886 666 00555 <br />
+                        Email: unityhospital@gmail.com
+                    </address>
+                </div><!--/col-md-3-->
+                <!-- End Address -->
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        2024 &copy; All Rights Reserved.
+                        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+                    </p>
+                </div>
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <a href="http://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.google.com" title="Google"><i class="fab fa-google"></i></a>
+                        <a href="http://www.linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </ul>
+                </div>
+                <!-- End Social Links -->
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer ===-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+
+</html>
