@@ -9,17 +9,10 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin">
 
     <!-- CSS Global Compulsory -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/CSS/style.css">
 
     <!-- CSS Header and Footer -->
-    <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="/CSS/footer.css">
-
-    <!-- CSS Implementing Plugins -->
-    <link rel="stylesheet" href="assets/plugins/line-icons-pro/styles.css">
-    <link rel="stylesheet" href="assets/plugins/line-icons/line-icons.css">
-    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.min.css">
 
     <!-- CSS Customization -->
     <link rel="stylesheet" href="/CSS/custom.css">
@@ -27,227 +20,208 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <!--=== Header v1 ===-->
-        <div class="header-v1">
+    <!-- Navbar -->
+    <div class="mega-menu" role="navigation">
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-responsive-collapse">
+            <ul class="navbar-nav">
 
+                <!-- Home  -->
+                <li>
+                    <a href="index.html">
+                        HOME
+                    </a>
 
-            <!-- Navbar -->
-            <div class="navbar mega-menu" role="navigation">
-                <div class="container">
-                    <!-- Collect the nav links, forms, and other content for toggling -->
-                    <div class="collapse navbar-collapse navbar-responsive-collapse">
-                        <div class="res-container">
-                            <ul class="nav navbar-nav">
+                </li>
+                <!-- End Home-->
 
-                                <!-- Collect the nav links, forms, and other content for toggling -->
-
-
-                                <!-- Home  -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="index.html">
-                                        HOME
-                                    </a>
-
-                                </li>
-                                <!-- End Home-->
-
-                                <!-- Blog -->
-                                <!-- <li class="mega-menu-fullwidth">
+                <!-- Blog -->
+                <!-- <li">
                                     <a href="blog.html">
                                         BLOGS
                                     </a>
                                 </li> -->
-                                <!-- End Blog -->
+                <!-- End Blog -->
 
-                                <!-- Contact Us -->
-                                <!-- <li class="mega-menu-fullwidth">
+                <!-- Contact Us -->
+                <!-- <li >
                                     <a href="contact.html">
                                         CONTACT US
                                     </a>
                                 </li> -->
-                                <!-- End Contact us -->
+                <!-- End Contact us -->
 
-                                <!-- Stuedent Registration -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="studentRegistration.html">
-                                        STUDENT REGISTRATION
-                                    </a>
-                                </li>
-                                <!-- End Student registration -->
+                <!-- Stuedent Registration -->
+                <li>
+                    <a href="studentRegistration.html">
+                        STUDENT REGISTRATION
+                    </a>
+                </li>
+                <!-- End Student registration -->
 
-                                <!-- Doctor Registration -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="doctorRegistration.html">
-                                        DOCTOR REGISTRATION
-                                    </a>
-                                </li>
-                                <!-- End doctor registration -->
+                <!-- Doctor Registration -->
+                <li>
+                    <a href="doctorRegistration.html">
+                        DOCTOR REGISTRATION
+                    </a>
+                </li>
+                <!-- End doctor registration -->
 
-                                <!-- student login -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="studentLogin.html">
-                                        STUDENT LOGIN
-                                    </a>
-                                </li>
-                                <!-- End student login -->
+                <!-- student login -->
+                <li>
+                    <a href="studentLogin.html">
+                        STUDENT LOGIN
+                    </a>
+                </li>
+                <!-- End student login -->
 
-                                <!-- doctor login -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="doctorLogin.html">
-                                        DOCTOR LOGIN
-                                    </a>
-                                </li>
-                                <!-- End doctor login -->
+                <!-- doctor login -->
+                <li>
+                    <a href="doctorLogin.html">
+                        DOCTOR LOGIN
+                    </a>
+                </li>
+                <!-- End doctor login -->
 
-                                <!-- admin login -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="adminLogin.html">
-                                        ADMIN LOGIN
-                                    </a>
-                                </li>
-                                <!-- End login -->
+                <!-- admin login -->
+                <li>
+                    <a href="adminLogin.html">
+                        ADMIN LOGIN
+                    </a>
+                </li>
+                <!-- End login -->
 
-                                <!-- Appointment -->
-                                <li class="mega-menu-fullwidth">
-                                    <a href="appointment.html">
-                                        BOOK APPOINTMENT
-                                    </a>
+                <!-- Appointment -->
+                <li>
+                    <a href="appointment.html">
+                        BOOK APPOINTMENT
+                    </a>
 
-                                </li>
-                                <!-- End Appointment -->
+                </li>
+                <!-- End Appointment -->
+            </ul>
+        </div>
+    </div>
+    <!-- End Navbar -->
 
-                            </ul>
 
+    <!-- title -->
+
+    <div style="text-align: center; margin-top: 50px;">
+        <h2>DOCTOR LOGIN</h2>
+    </div>
+    <!--  title  -->
+
+
+    <!--=== Content Part ===-->
+    <div class="content">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+                <form class="reg-page">
+                    <div class="reg-header">
+                        <h2>Login to your account</h2>
+                    </div>
+
+                    <div class="input-group " style="margin-bottom: 20px;">
+                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                        <input type="Email" name="userid" placeholder="Email Address" class="form-control" required="">
+                    </div>
+                    <div class="input-group " style="margin-bottom: 20px;">
+                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                        <input type="password" name="usrpsw" placeholder="Password" class="form-control" required="">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 checkbox">
+                            <label><input type="checkbox"> Stay signed in</label>
+                        </div>
+                        <div class="col-md-6">
+                            <button class="btn-u pull-right" type="submit" onclick="userlogin(form)">Login</button>
                         </div>
                     </div>
-                </div>
+
+                    <hr>
+
+                    <h4>Forget your Password ?</h4>
+                    <p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
+                </form>
             </div>
-        </div>
-        <!-- End Navbar -->
+        </div><!--/row-->
+    </div><!--/container-->
+    <!--=== End Content Part ===-->
 
-
-        <!-- title -->
-
-        <div style="text-align: center; margin-top: 50px;">
-            <h2>DOCTOR LOGIN</h2>
-        </div>
-        <!--  title  -->
-
-
-        <!--=== Content Part ===-->
-        <div class="container content">
+    <!--=== Footer ===-->
+    <div class="footer-v1">
+        <div class="footer">
             <div class="row">
-                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-                    <form class="reg-page">
-                        <div class="reg-header">
-                            <h2>Login to your account</h2>
-                        </div>
-
-                        <div class="input-group " style="margin-bottom: 20px;">
-                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                            <input type="Email" name="userid" placeholder="Email Address" class="form-control"
-                                required="">
-                        </div>
-                        <div class="input-group " style="margin-bottom: 20px;">
-                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                            <input type="password" name="usrpsw" placeholder="Password" class="form-control"
-                                required="">
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-6 checkbox">
-                                <label><input type="checkbox"> Stay signed in</label>
-                            </div>
-                            <div class="col-md-6">
-                                <button class="btn-u pull-right" type="submit" onclick="userlogin(form)">Login</button>
-                            </div>
-                        </div>
-
-                        <hr>
-
-                        <h4>Forget your Password ?</h4>
-                        <p>no worries, <a class="color-green" href="#">click here</a> to reset your password.</p>
-                    </form>
-                </div>
-            </div><!--/row-->
-        </div><!--/container-->
-        <!--=== End Content Part ===-->
-
-        <!--=== Footer ===-->
-        <div class="footer-v1">
-            <div class="footer">
-                <div class="container">
-                    <div class="row">
-                        <!-- About -->
-                        <div class="col-md-3 md-margin-bottom-40 about">
-                            <!-- <a href="index.html"><img id="logo-footer" class="footer-logo"
+                <!-- About -->
+                <div class="col-md-3 md-margin-bottom-40 about">
+                    <!-- <a href="index.html"><img id="logo-footer" class="footer-logo"
                                     src="/logo.jpg" alt=""></a> -->
-                            <p>At HCC NITK, we are convinced that 'quality' and 'lowest cost' are not mutually
-                                exclusive when it comes to healthcare delivery.</p>
-                            <p>Our mission is to deliver high quality, affordable healthcare services to the whole NITK
-                                community.</p>
-                        </div><!--/col-md-3-->
-                        <!-- End About -->
+                    <p>At HCC NITK, we are convinced that 'quality' and 'lowest cost' are not mutually
+                        exclusive when it comes to healthcare delivery.</p>
+                    <p>Our mission is to deliver high quality, affordable healthcare services to the whole NITK
+                        community.</p>
+                </div><!--/col-md-3-->
+                <!-- End About -->
 
 
 
-                        <!-- Link List -->
-                        <div class="col-md-3" style="margin-bottom: 40px;">
-                            <div class="headline">
-                                <h2>Useful Links</h2>
-                            </div>
-                            <div class="list-unstyled link-list">
-                                <li style="list-style-type: none;"><a href="about.html">About us</a><i class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
-                                <li style="list-style-type: none;"><a href="Contact.html">Contact us</a><i class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
-                                <li style="list-style-type: none;"><a href="appointment.html">Book Appointment</a><i class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
-                            </div>
-                        </div><!--/col-md-3-->
-                        <!-- End Link List -->
-
-                        <!-- Address -->
-                        <div class="col-md-3 map-img" style="margin-bottom: 40px;">
-                            <div class="headline">
-                                <h2>Contact Us</h2>
-                            </div>
-                            <address class="md-margin-bottom-40">
-                                Unity Hospital <br />
-                                Ahmedabad, IN <br />
-                                Phone: 886 666 00555 <br />
-                                Email: unityhospital@gmail.com
-                            </address>
-                        </div><!--/col-md-3-->
-                        <!-- End Address -->
+                <!-- Link List -->
+                <div class="col-md-3" style="margin-bottom: 40px;">
+                    <div class="headline">
+                        <h2>Useful Links</h2>
                     </div>
-                </div>
-            </div><!--/footer-->
-
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                2024 &copy; All Rights Reserved.
-                                <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
-                            </p>
-                        </div>
-
-                        <!-- Social Links -->
-                        <div class="col-md-6">
-                            <ul class="footer-socials list-inline">
-                                <a href="http://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
-                                <a href="http://www.google.com" title="Google"><i class="fab fa-google"></i></a>
-                                <a href="http://www.linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                <a href="http://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
-                            </ul>
-                        </div>
-                        <!-- End Social Links -->
+                    <div class="list-unstyled link-list">
+                        <li style="list-style-type: none;"><a href="about.html">About us</a><i class="fa fa-angle-right"
+                                style="margin-left: 5px;"></i></li>
+                        <li style="list-style-type: none;"><a href="Contact.html">Contact us</a><i
+                                class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
+                        <li style="list-style-type: none;"><a href="appointment.html">Book Appointment</a><i
+                                class="fa fa-angle-right" style="margin-left: 5px;"></i></li>
                     </div>
+                </div><!--/col-md-3-->
+                <!-- End Link List -->
+
+                <!-- Address -->
+                <div class="col-md-3 map-img" style="margin-bottom: 40px;">
+                    <div class="headline">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <address class="md-margin-bottom-40">
+                        Unity Hospital <br />
+                        Ahmedabad, IN <br />
+                        Phone: 886 666 00555 <br />
+                        Email: unityhospital@gmail.com
+                    </address>
+                </div><!--/col-md-3-->
+                <!-- End Address -->
+            </div>
+        </div><!--/footer-->
+
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>
+                        2024 &copy; All Rights Reserved.
+                        <a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a>
+                    </p>
                 </div>
-            </div><!--/copyright-->
-        </div>
-        <!--=== End Footer ===-->
-    </div><!--/wrapper-->
+
+                <!-- Social Links -->
+                <div class="col-md-6">
+                    <ul class="footer-socials list-inline">
+                        <a href="http://www.facebook.com" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="http://www.google.com" title="Google"><i class="fab fa-google"></i></a>
+                        <a href="http://www.linkedin.com" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="http://www.twitter.com" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    </ul>
+                </div>
+                <!-- End Social Links -->
+            </div>
+        </div><!--/copyright-->
+    </div>
+    <!--=== End Footer ===-->
 
     <!-- Login Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery/validation.js"></script>
